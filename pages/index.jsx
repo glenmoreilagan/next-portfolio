@@ -70,13 +70,12 @@ export default function Home() {
         </section>
       </div>
       {/* ABOUT */}
-      <section>
+      {/* <section>
         <div className='bg-[#FAFAFA] py-20'>
           <div className='max-w-[60rem] mx-auto flex justify-center flex-col md:flex-row gap-3 text-secondary-dark'>
             {abouts.map((about, i) => (
               <div key={i} className='md:w-1/3 p-6 border border-gray-100 rounded-e-m rounded-md'>
                 <div className='mb-10'>
-                  {/* <h1 className='text-center text-2xl font-bold uppercase'>{about.title}</h1> */}
                   <div className='flex justify-center'>{about.icon}</div>
                 </div>
                 <div className='md:h-[10rem] flex'>
@@ -86,7 +85,7 @@ export default function Home() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
       {/* SKILLS */}
       <section>
         <div className=' h-[60vh] flex justify-center items-center'>
@@ -119,10 +118,10 @@ export default function Home() {
                     </div>
                     <div className='flex-1'>
                       <p className='text-xl capitalize tracking-widest font-bold'>iPOS</p>
-                      <span className='text-xs text-gray-500'>Inventory Point of Sale</span>
+                      <span className='text-xs text-gray-500'>Inventory Point of Sale - 2019</span>
                     </div>
                     <div className='flex gap-3'>
-                      <a href='#' title='View site'>
+                      <a href='https://github.com/glenmoreilagan/iPOS' target='_blank' title='View repository'>
                         <FaGithub size={'1em'} color='#00829b' />
                       </a>
                       <a href='#' title='View site'>
@@ -140,7 +139,14 @@ export default function Home() {
                     </p>
                   </div>
                   <div className='flex justify-between items-center  absolute bottom-5 w-full'>
-                    <p className=' italic text-xs text-center'>HTML, CSS, BOOTSTRAP, JS, LARAVEL, MYSQL</p>
+                    <p className='text-[9px] text-center flex gap-[2px]'>
+                      <span className='bg-blue-500 px-3 py-1 rounded-xl text-white'>HTML</span>
+                      <span className='bg-blue-500 px-3 py-1 rounded-xl text-white'>CSS</span>
+                      <span className='bg-purple-500 px-3 py-1 rounded-xl text-white'>BOOTSTRAP</span>
+                      <span className='bg-yellow-500 px-3 py-1 rounded-xl text-white'>JS</span>
+                      <span className='bg-red-500 px-3 py-1 rounded-xl text-white'>LARAVEL</span>
+                      <span className='bg-gray-500 px-3 py-1 rounded-xl text-white'>MYSQL</span>
+                    </p>
                   </div>
                 </div>
               </div>
@@ -152,7 +158,7 @@ export default function Home() {
                     </div>
                     <div className='flex-1'>
                       <p className='text-xl capitalize tracking-widest font-bold'>CAS</p>
-                      <span className='text-xs text-gray-500'>Clinic Appointment System</span>
+                      <span className='text-xs text-gray-500'>Clinic Appointment System - 2021</span>
                     </div>
                     <div className='flex gap-3'>
                       <a href='#' title='View site'>
@@ -173,7 +179,14 @@ export default function Home() {
                     </p>
                   </div>
                   <div className='flex justify-between items-center  absolute bottom-5 w-full'>
-                    <p className='italic text-xs text-center'>HTML, CSS, BOOTSTRAP, PHP, MYSQL</p>
+                    <p className='text-[9px] text-center flex gap-[2px]'>
+                      <span className='bg-blue-500 px-3 py-1 rounded-xl text-white'>HTML</span>
+                      <span className='bg-blue-500 px-3 py-1 rounded-xl text-white'>CSS</span>
+                      <span className='bg-purple-500 px-3 py-1 rounded-xl text-white'>BOOTSTRAP</span>
+                      <span className='bg-yellow-500 px-3 py-1 rounded-xl text-white'>JS</span>
+                      <span className='bg-red-500 px-3 py-1 rounded-xl text-white'>PHP</span>
+                      <span className='bg-gray-500 px-3 py-1 rounded-xl text-white'>MYSQL</span>
+                    </p>
                   </div>
                 </div>
               </div>
@@ -185,7 +198,7 @@ export default function Home() {
                     </div>
                     <div className='flex-1'>
                       <p className='text-xl capitalize tracking-widest font-bold'>LMS</p>
-                      <span className='text-xs text-gray-500'>Leave Management System</span>
+                      <span className='text-xs text-gray-500'>Leave Management System - 2021</span>
                     </div>
                     <div className='flex gap-3'>
                       <a href='#' title='View site'>
@@ -205,7 +218,14 @@ export default function Home() {
                     </p>
                   </div>
                   <div className='flex justify-between items-center  absolute bottom-5 w-full'>
-                    <p className='italic text-xs text-center'>HTML, CSS, BOOTSTRAP, REACTJS, LARAVEL, MYSQL</p>
+                    <p className='text-[9px] text-center flex gap-[2px]'>
+                      <span className='bg-blue-500 px-3 py-1 rounded-xl text-white'>HTML</span>
+                      <span className='bg-blue-500 px-3 py-1 rounded-xl text-white'>CSS</span>
+                      <span className='bg-purple-500 px-3 py-1 rounded-xl text-white'>BOOTSTRAP</span>
+                      <span className='bg-sky-500 px-3 py-1 rounded-xl text-white'>REACTJS</span>
+                      <span className='bg-red-500 px-3 py-1 rounded-xl text-white'>LARAVEL</span>
+                      <span className='bg-gray-500 px-3 py-1 rounded-xl text-white'>MYSQL</span>
+                    </p>
                   </div>
                 </div>
               </div>
