@@ -11,7 +11,7 @@ export default function Home() {
     { image: '/images/bootstrap.png', label: 'bootstrap' },
     { image: '/images/material.png', label: 'material ui' },
     { image: '/images/jquery.png', label: 'JQuery' },
-    { image: '/images/git.png', label: 'git' },
+    { image: '/images/git.png', label: 'github' },
     { image: '/images/tailwind.png', label: 'tailwind' },
     { image: '/images/sass.png', label: 'sass' },
   ]
@@ -39,9 +39,22 @@ export default function Home() {
 
   return (
     <>
-      <div className='max-w-[60rem] mx-auto'>
+      <nav className='bg-white p-10 sticky top-0 z-10 border-b-[1px]'>
+        <ul className='flex gap-3 justify-center'>
+          <li>
+            <a href='#home'>Home</a>
+          </li>
+          <li>
+            <a href='#skills'>Skills</a>
+          </li>
+          <li>
+            <a href='#projects'>Projects</a>
+          </li>
+        </ul>
+      </nav>
+      <div className='max-w-7xl px-5 md:px-10 mx-auto'>
         {/* HERO PAGE */}
-        <section>
+        <section id='home'>
           <div className='h-screen flex items-center'>
             <div
               className='w-full md:w-1/2 text-center md:text-left
@@ -87,17 +100,17 @@ export default function Home() {
         </div>
       </section> */}
       {/* SKILLS */}
-      <section>
-        <div className=' h-[60vh] flex justify-center items-center'>
+      <section className='max-w-7xl' id='skills'>
+        <div className='md:h-[60vh] flex justify-center items-center px-3 mb-3'>
           <div className='max-w-[60rem] mx-auto'>
-            <div className='flex justify-center flex-wrap gap-6 grayscale'>
+            <div className='flex justify-center flex-wrap gap-2 grayscale'>
               {skills.map((skill, i) => (
-                <div key={i} className='flex items-center gap-3 shadow-lg w-1/6 p-3'>
+                <div key={i} className='flex items-center gap-3 shadow-lg w-30 md:w-1/6 p-3 rounded-md'>
                   <div className=''>
-                    <img src={skill.image} alt={skill.label} width={35} />
+                    <img src={skill.image} alt={skill.label} className='w-3 md:w-8' />
                   </div>
                   <div className='flex-1'>
-                    <p className='text-center text-sm capitalize'>{skill.label}</p>
+                    <p className='text-center text-xs md:text-sm capitalize'>{skill.label}</p>
                   </div>
                 </div>
               ))}
@@ -106,31 +119,31 @@ export default function Home() {
         </div>
       </section>
       {/* PROJECTS */}
-      <section>
+      <section className='max-w-7xl md:px-10' id='projects'>
         <div className='flex justify-center items-center'>
-          <div className='max-w-[60rem] mx-auto'>
-            <div className='flex justify-center flex-wrap gap-6'>
-              <div className='flex gap-3 border border-gray-100 rounded-md p-10 w-[45%]'>
+          <div className='max-w-7xl mx-auto'>
+            <div className='grid grid-cols-1 md:grid-cols-3 gap-3'>
+              <div className='flex gap-3 border border-gray-100 rounded-md p-10 w-full'>
                 <div className='flex-1 relative'>
                   <div className='flex gap-3 mb-5 items-center'>
                     <div>
-                      <CgProfile size={'3em'} color='#FF6600' />
+                      <CgProfile size={'2em'} className='text-blue-600' />
                     </div>
                     <div className='flex-1'>
                       <p className='text-xl capitalize tracking-widest font-bold'>iPOS</p>
-                      <span className='text-xs text-gray-500'>Inventory Point of Sale - 2019</span>
+                      <span className='text-xs text-gray-500'>Inventory Management with Point of Sale - 2019</span>
                     </div>
                     <div className='flex gap-3'>
                       <a href='https://github.com/glenmoreilagan/iPOS' target='_blank' title='View repository'>
-                        <FaGithub size={'1em'} color='#00829b' />
+                        <FaGithub size={'1em'} color='#303030' />
                       </a>
                       <a href='#' title='View site'>
-                        <FaLink size={'1em'} color='#00829b' />
+                        <FaLink size={'1em'} color='#303030' />
                       </a>
                     </div>
                   </div>
                   <div>
-                    <p className='text-justify text-sm capitalize mb-20'>
+                    <p className='text-justify text-sm mb-20 text-gray-600 line-clamp-3 md:line-clamp-6'>
                       iPOS, which stands for Inventory Point of Sale, is an innovative and user-friendly system designed
                       to revolutionize the way businesses handle both inventory management and point-of-sale
                       transactions. With iPOS, businesses can effortlessly monitor their stock levels, track product
@@ -138,8 +151,8 @@ export default function Home() {
                       of conducting transactions, generating invoices, and keeping a close eye on product availability.
                     </p>
                   </div>
-                  <div className='flex justify-between items-center  absolute bottom-5 w-full'>
-                    <p className='text-[9px] text-center flex gap-[2px]'>
+                  <div className='flex justify-between items-center  absolute bottom-0 w-full'>
+                    <p className='text-[9px] text-center flex flex-wrap gap-1'>
                       <span className='bg-blue-500 px-3 py-1 rounded-xl text-white'>HTML</span>
                       <span className='bg-blue-500 px-3 py-1 rounded-xl text-white'>CSS</span>
                       <span className='bg-purple-500 px-3 py-1 rounded-xl text-white'>BOOTSTRAP</span>
@@ -150,11 +163,11 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <div className='flex gap-3 border border-gray-100 rounded-md p-10 w-[45%]'>
+              <div className='flex gap-3 border border-gray-100 rounded-md p-10 w-full'>
                 <div className='flex-1 relative'>
                   <div className='flex gap-3 mb-5 items-center'>
                     <div>
-                      <CgProfile size={'3em'} color='#FF6600' />
+                      <CgProfile size={'2em'} className='text-blue-600' />
                     </div>
                     <div className='flex-1'>
                       <p className='text-xl capitalize tracking-widest font-bold'>CAS</p>
@@ -162,15 +175,15 @@ export default function Home() {
                     </div>
                     <div className='flex gap-3'>
                       <a href='#' title='View site'>
-                        <FaGithub size={'1em'} color='#00829b' />
+                        <FaGithub size={'1em'} color='#303030' />
                       </a>
                       <a href='#' title='View site'>
-                        <FaLink size={'1em'} color='#00829b' />
+                        <FaLink size={'1em'} color='#303030' />
                       </a>
                     </div>
                   </div>
                   <div>
-                    <p className='text-justify text-sm capitalize mb-20'>
+                    <p className='text-justify text-sm  mb-20 text-gray-600 line-clamp-3 md:line-clamp-6'>
                       The Clinic Appointment System (CAS) is a specialized and tailored solution designed to streamline
                       and enhance the process of managing appointments for pregnant individuals. CAS offers a seamless
                       and user-friendly platform that caters specifically to the unique needs of clinics and expecting
@@ -178,8 +191,8 @@ export default function Home() {
                       optimal care and timely medical attention for pregnant individuals.
                     </p>
                   </div>
-                  <div className='flex justify-between items-center  absolute bottom-5 w-full'>
-                    <p className='text-[9px] text-center flex gap-[2px]'>
+                  <div className='flex justify-between items-center  absolute bottom-0 w-full'>
+                    <p className='text-[9px] text-center flex flex-wrap gap-1'>
                       <span className='bg-blue-500 px-3 py-1 rounded-xl text-white'>HTML</span>
                       <span className='bg-blue-500 px-3 py-1 rounded-xl text-white'>CSS</span>
                       <span className='bg-purple-500 px-3 py-1 rounded-xl text-white'>BOOTSTRAP</span>
@@ -190,11 +203,11 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <div className='flex gap-3 border border-gray-100 rounded-md p-10 w-[45%]'>
+              <div className='flex gap-3 border border-gray-100 rounded-md p-10 w-full'>
                 <div className='flex-1 relative'>
                   <div className='flex gap-3 mb-5 items-center'>
                     <div>
-                      <CgProfile size={'3em'} color='#FF6600' />
+                      <CgProfile size={'2em'} className='text-blue-600' />
                     </div>
                     <div className='flex-1'>
                       <p className='text-xl capitalize tracking-widest font-bold'>LMS</p>
@@ -202,23 +215,23 @@ export default function Home() {
                     </div>
                     <div className='flex gap-3'>
                       <a href='#' title='View site'>
-                        <FaGithub size={'1em'} color='#00829b' />
+                        <FaGithub size={'1em'} color='#303030' />
                       </a>
                       <a href='#' title='View site'>
-                        <FaLink size={'1em'} color='#00829b' />
+                        <FaLink size={'1em'} color='#303030' />
                       </a>
                     </div>
                   </div>
                   <div>
-                    <p className='text-justify text-sm capitalize mb-20'>
+                    <p className='text-justify text-sm  mb-20 text-gray-600 line-clamp-3 md:line-clamp-6'>
                       The Leave Management System (LMS) is a tailored solution designed to simplify and automate the
                       process of managing employee leave for small businesses. LMS offers a user-friendly platform that
                       caters specifically to the unique needs of small enterprises, helping them effectively track and
                       manage employee time off while ensuring smooth operations.
                     </p>
                   </div>
-                  <div className='flex justify-between items-center  absolute bottom-5 w-full'>
-                    <p className='text-[9px] text-center flex gap-[2px]'>
+                  <div className='flex justify-between items-center absolute bottom-0 w-full'>
+                    <p className='text-[9px] text-center flex flex-wrap gap-1'>
                       <span className='bg-blue-500 px-3 py-1 rounded-xl text-white'>HTML</span>
                       <span className='bg-blue-500 px-3 py-1 rounded-xl text-white'>CSS</span>
                       <span className='bg-purple-500 px-3 py-1 rounded-xl text-white'>BOOTSTRAP</span>
@@ -233,6 +246,29 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* FOOTER */}
+      <footer className='h-[30vh]  bg-[#303030] text-white text-xs'>
+        <div className='grid grid-cols-2 px-10 max-w-7xl h-full'>
+          <div className='flex items-center h-full'>
+            <div className=' leading-7'>
+              <p>Quick Links</p>
+              <ul className=' list-disc list-inside'>
+                <li>
+                  <a href='#home'>Home</a>
+                </li>
+                <li>
+                  <a href='#skills'>Skills</a>
+                </li>
+                <li>
+                  <a href='#projects'>Projects</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div></div>
+        </div>
+      </footer>
     </>
   )
 }
