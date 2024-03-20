@@ -17,7 +17,7 @@ const skills = [
 
 export default function SkillsSection() {
   return (
-    <section className='max-w-7xl' id='skills'>
+    <section className='max-w-7xl mx-auto' id='skills'>
       <div className='md:h-[60vh] flex justify-center items-center px-3 mb-3'>
         <div className='max-w-[60rem] mx-auto'>
           <div className='flex justify-center flex-wrap gap-2 grayscale'>

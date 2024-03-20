@@ -5,7 +5,7 @@ import { FaGithub, FaLink } from 'react-icons/fa'
 
 export default function ProjectSection() {
   return (
-    <section className='max-w-7xl md:px-10' id='projects'>
+    <section className='max-w-7xl mx-auto md:px-10' id='projects'>
       <div className='flex justify-center items-center'>
         <div className='max-w-7xl mx-auto'>
           <div className='grid grid-cols-1 md:grid-cols-3 gap-3'>
