@@ -25,7 +25,7 @@ export default function ContactSection() {
           </div>
           <div>
             <p className='text-xs text-gray-600'>My LinkedIn account:</p>
-            <a href='https://www.linkedin.com/in/glenmoreilagan' className='text-sm font-medium'>
+            <a href='https://www.linkedin.com/in/glenmoreilagan' target='_blank' className='text-sm font-medium'>
               /glenmoreilagan
             </a>
           </div>
@@ -36,7 +36,7 @@ export default function ContactSection() {
           </div>
           <div>
             <p className='text-xs text-gray-600'>My Instagram account:</p>
-            <a href='https://www.instagram.com/glenmarami' className='text-sm font-medium'>
+            <a href='https://www.instagram.com/glenmarami' target='_blank' className='text-sm font-medium'>
               /glenmarami
             </a>
           </div>
@@ -47,7 +47,7 @@ export default function ContactSection() {
           </div>
           <div>
             <p className='text-xs text-gray-600'>My Github account:</p>
-            <a href='https://github.com/glenmoreilagan' className='text-sm font-medium'>
+            <a href='https://github.com/glenmoreilagan' target='_blank' className='text-sm font-medium'>
               /glenmoreilagan
             </a>
           </div>
@@ -58,7 +58,7 @@ export default function ContactSection() {
           </div>
           <div>
             <p className='text-xs text-gray-600'>My Tiktok account:</p>
-            <a href='https://www.tiktok.com/@glenmarami' className='text-sm font-medium'>
+            <a href='https://www.tiktok.com/@glenmarami' target='_blank' className='text-sm font-medium'>
               /glenmarami
             </a>
           </div>
@@ -69,7 +69,7 @@ export default function ContactSection() {
           </div>
           <div>
             <p className='text-xs text-gray-600'>My Facebook account:</p>
-            <a href='https://www.facebook.com/glenmarami' className='text-sm font-medium'>
+            <a href='https://www.facebook.com/glenmarami' target='_blank' className='text-sm font-medium'>
               /glenmarami
             </a>
           </div>
