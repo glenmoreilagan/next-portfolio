@@ -18,13 +18,13 @@ export default function FooterSection() {
           </ul>
         </div>
         <div>
-          <p className='text-center md:text-right font-thin'>
+          {/* <p className='text-center md:text-right font-thin'>
             My portfolio designed was inspired by{' '}
             <a href='https://dnachavez.ph' target='_blank' className='font-medium underline'>
               dnachavez
             </a>
-          </p>
-          <p className='text-center md:text-right font-thin'>Developed by Glenmore @{2024}</p>
+          </p> */}
+          <p className='text-center md:text-right font-thin'>&copy; {2024} Created by Glenmore | All rights reserved</p>
         </div>
       </div>
     </footer>
