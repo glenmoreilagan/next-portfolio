@@ -32,18 +32,18 @@ export default function Home() {
   return (
     <>
       <nav className='bg-white p-10 sticky top-0 z-10 border-b-[1px]'>
-        <ul className='flex gap-3 justify-center'>
+        <ul className='flex gap-6 justify-center'>
           <li>
-            <a href='#home'>Home</a>
+            <a href='#home' className='hover:font-bold transition-all delay-100'>Home</a>
           </li>
           <li>
-            <a href='#skills'>Skills</a>
+            <a href='#skills' className='hover:font-bold transition-all delay-100'>Skills</a>
           </li>
           <li>
-            <a href='#projects'>Projects</a>
+            <a href='#projects' className='hover:font-bold transition-all delay-100'>Projects</a>
           </li>
           <li>
-            <a href='#contact'>Contact</a>
+            <a href='#contact' className='hover:font-bold transition-all delay-100'>Contact</a>
           </li>
         </ul>
       </nav>

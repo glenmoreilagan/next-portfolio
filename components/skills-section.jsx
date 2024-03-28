@@ -21,25 +21,26 @@ const skills = [
 
 export default function SkillsSection() {
   return (
-    <section id='contact' className='bg-[#F7F9FC]'>
-      <div className='w-[calc(100vw-3rem)] mx-auto sm:w-[93vw] md:w-[90vw] lg:w-[900px] pb-12' id='skills'>
-        <div className='flex justify-center items-center px-3 pt-12 mb-3'>
-            <div className='grid grid-cols-5 gap-6'>
-              {skills.map((skill, i) => (
-                <div
-                  key={i}
-                  className='flex items-center flex-col gap-3 w-36 p-3 rounded-md bg-white'
-                  style={{ boxShadow: '0 4px 10px 0 rgba(189, 208, 223, .25)' }}
-                >
-                  <div className=' py-3'>
-                    <img src={skill.image} alt={skill.label} className='w-3 md:w-10' />
-                  </div>
-                  <div className='flex-1'>
-                    <p className='text-center text-xs md:text-sm capitalize'>{skill.label}</p>
-                  </div>
-                </div>
-              ))}
+    <section id='skills' className='bg-[#F7F9FC]'>
+      <div className='w-[calc(100vw-3rem)] mx-auto sm:w-[93vw] md:w-[90vw] lg:w-[900px] pb-12'>
+        <div>
+          <h1 className='font-bold text-4xl text-[#191919] pt-12 pb-12'>Skills</h1>
+        </div>
+        <div className='grid grid-cols-3 md:grid-cols-5 gap-6'>
+          {skills.map((skill, i) => (
+            <div
+              key={i}
+              className='flex items-center flex-col gap-3 w-full p-3 rounded-md bg-white'
+              style={{ boxShadow: '0 4px 10px 0 rgba(189, 208, 223, .25)' }}
+            >
+              <div className=' py-3'>
+                <img src={skill.image} alt={skill.label} className='w-8 md:w-10' />
+              </div>
+              <div className='flex-1'>
+                <p className='text-center text-xs md:text-sm capitalize px-3'>{skill.label}</p>
+              </div>
             </div>
+          ))}
         </div>
       </div>
     </section>
