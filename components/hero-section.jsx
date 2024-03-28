@@ -5,7 +5,7 @@ export default function HeroSection() {
   return (
     <section
       id='home'
-      className='min-h-[67vh] w-[calc(100vw-3rem)] mx-auto sm:w-[93vw] md:w-[90vw] lg:w-[900px] flex flex-col justify-center mb-6'
+      className='min-h-[67vh] w-[calc(100vw-3rem)] mx-auto sm:w-[93vw] md:w-[90vw] lg:w-[900px] flex flex-col justify-center pb-12'
     >
       <div className='max-w-7xl px-5 md:px-10 mx-auto'>
         <div className='text-2xl sm:text-4xl md:text-6xl text-center mb-8'>

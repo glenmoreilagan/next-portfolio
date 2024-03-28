@@ -5,33 +5,33 @@ import { FaGithub, FaLink } from 'react-icons/fa'
 
 export default function ProjectSection() {
   return (
-    <section className='w-[calc(100vw-3rem)] mx-auto sm:w-[93vw] md:w-[90vw] lg:w-[900px] mb-6' id='projects'>
+    <section className='w-[calc(100vw-3rem)] mx-auto sm:w-[93vw] md:w-[90vw] lg:w-[900px] pb-12' id='projects'>
       <div className='flex justify-center items-center'>
         <div className='max-w-7xl mx-auto'>
-          <div className='grid grid-cols-1 md:grid-cols-3 gap-3'>
+          <div className='grid grid-cols-1 md:grid-cols-2 gap-3 pt-12'>
             <div className='flex gap-3 border border-gray-100 rounded-md p-10 w-full'>
               <div className='flex-1 relative'>
                 <div className='flex gap-3 mb-5 items-center'>
                   <div className='flex-1'>
-                    <p className='text-xl capitalize tracking-widest font-bold'>iPOS</p>
-                    <span className='text-xs text-gray-500'>Inventory with Point of Sale - 2019</span>
+                    <p className='text-xl capitalize tracking-widest font-bold'>Kape-Shop</p>
+                    <span className='text-xs text-gray-500'>Inventory with Point of Sale - 2024</span>
                   </div>
                   <div className='flex gap-3'>
-                    <a href='https://github.com/glenmoreilagan/iPOS' target='_blank' title='View repository'>
+                    <a href='https://github.com/glenmoreilagan/kape-shop2' target='_blank' title='View repository'>
                       <FaGithub size={'1em'} color='#303030' />
                     </a>
-                    <a href='#' title='View site'>
+                    <a href='https://kape-shop.vercel.app' title='View site'>
                       <FaLink size={'1em'} color='#303030' />
                     </a>
                   </div>
                 </div>
                 <div>
                   <p className='text-justify text-sm mb-20 text-gray-600 line-clamp-3 md:line-clamp-6'>
-                    iPOS, which stands for Inventory Point of Sale, is an innovative and user-friendly system designed
-                    to revolutionize the way businesses handle both inventory management and point-of-sale transactions.
-                    With iPOS, businesses can effortlessly monitor their stock levels, track product movement, and
-                    manage sales in real-time. The system's intuitive interface simplifies the process of conducting
-                    transactions, generating invoices, and keeping a close eye on product availability.
+                    Kape-shop, used for Inventory with Point of Sale, is an innovative and user-friendly system designed
+                    to revolutionize the way businesses handle both inventory management and point-of-sale transactions,
+                    businesses can effortlessly monitor their stock levels, track product movement, and manage sales in
+                    real-time. The system's intuitive interface simplifies the process of conducting transactions,
+                    generating invoices, and keeping a close eye on product availability.
                   </p>
                 </div>
                 <div className='flex justify-between items-center  absolute bottom-0 w-full'>
@@ -54,11 +54,12 @@ export default function ProjectSection() {
                     <span className='text-xs text-gray-500'>Clinic Appointment System - 2021</span>
                   </div>
                   <div className='flex gap-3'>
-                    <a href='#' title='View site'>
+                    <a
+                      href='https://github.com/glenmoreilagan/clinic-appointment-system'
+                      title='View Repository'
+                      target='_blank'
+                    >
                       <FaGithub size={'1em'} color='#303030' />
-                    </a>
-                    <a href='#' title='View site'>
-                      <FaLink size={'1em'} color='#303030' />
                     </a>
                   </div>
                 </div>
@@ -91,11 +92,12 @@ export default function ProjectSection() {
                     <span className='text-xs text-gray-500'>Leave Management System - 2021</span>
                   </div>
                   <div className='flex gap-3'>
-                    <a href='#' title='View site'>
+                    <a
+                      href='https://github.com/glenmoreilagan/leave-management-system'
+                      title='View Repository'
+                      target='_blank'
+                    >
                       <FaGithub size={'1em'} color='#303030' />
-                    </a>
-                    <a href='#' title='View site'>
-                      <FaLink size={'1em'} color='#303030' />
                     </a>
                   </div>
                 </div>
