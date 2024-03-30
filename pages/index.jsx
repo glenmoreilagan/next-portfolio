@@ -1,13 +1,16 @@
+import { useRouter } from 'next/router'
+import { useEffect, useState } from 'react'
+
+import dynamic from 'next/dynamic'
+
 import ContactSection from '@/components/contact-section'
 import FooterSection from '@/components/footer-section'
 import HeroSection from '@/components/hero-section'
 import ProjectSection from '@/components/project-secion'
 import SkillsSection from '@/components/skills-section'
+const ExperienceSection = dynamic(() => import('@/components/experience'), { ssr: false })
 
 import { CgGym, CgCode, CgRead } from 'react-icons/cg'
-
-import { useRouter } from 'next/router'
-import { useEffect, useState } from 'react'
 
 export default function Home() {
   const router = useRouter()
@@ -74,6 +77,15 @@ export default function Home() {
           </li>
           <li>
             <a
+              href='#experience'
+              className={`hover:font-bold transition-all delay-100 ${activeNav === '#experience' && 'font-bold'}`}
+              onClick={handleNavLinkActive}
+            >
+              Experience
+            </a>
+          </li>
+          <li>
+            <a
               href='#contact'
               className={`hover:font-bold transition-all delay-100 ${activeNav === '#contact' && 'font-bold'}`}
               onClick={handleNavLinkActive}
@@ -83,6 +95,7 @@ export default function Home() {
           </li>
         </ul>
       </nav>
+
       {/* HERO PAGE */}
       <HeroSection />
       {/* ABOUT */}
@@ -92,6 +105,9 @@ export default function Home() {
 
       {/* PROJECTS */}
       <ProjectSection />
+
+      {/* EXPERIENCE */}
+      <ExperienceSection />
 
       {/* CONTACT */}
       <ContactSection />

@@ -28,3 +28,23 @@
 body {
   color: rgb(var(--foreground-rgb));
 }
+
+.rc-card:focus {
+  outline: none !important;
+}
+
+.card-description {
+  align-items: start !important;
+}
+
+.vertical-item-row {
+  justify-content: space-between !important;
+}
+
+.timeline-main-wrapper, .jKKjVe, .dBAArN {
+  padding: 0 !important;
+}
+
+.gyFIuQ {
+  justify-content: start !important;
+}
