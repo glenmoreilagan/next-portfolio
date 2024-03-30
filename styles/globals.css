@@ -48,3 +48,8 @@ body {
 .card-content-wrapper {
   justify-content: start !important;
 }
+
+.card-description {
+  margin: 0;
+  padding: 0;
+}
