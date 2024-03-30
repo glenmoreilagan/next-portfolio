@@ -1,5 +1,6 @@
 import React from 'react'
 import { FaRegEnvelope, FaLinkedinIn, FaInstagram, FaGithub, FaTiktok, FaFacebook } from 'react-icons/fa'
+import SectionLayout from './layouts/SectionLayout'
 
 const socialMedia = [
   {
@@ -64,23 +65,21 @@ const socialMedia = [
 
 export default function ContactSection() {
   return (
-    <section id='contact' className='bg-[#F7F9FC]'>
-      <div className='w-[calc(100vw-3rem)] mx-auto sm:w-[93vw] md:w-[90vw] lg:w-[900px] pb-12'>
-        <div>
-          <h1 className='font-bold text-4xl text-[#191919] pt-12 pb-12'>Contact</h1>
-        </div>
-        <div className='grid grid-cols-2 md:grid-cols-3 place-items-start gap-x-12  md:gap-x-6 gap-y-12'>
-          {socialMedia.map((item) => (
-            <div key={item.label} className='flex gap-3 items-center'>
-              <div>{item.icon}</div>
-              <div>
-                <p className='text-xs text-gray-600'>{item.label}</p>
-                <div className='text-blue-600'>{item.url}</div>
-              </div>
-            </div>
-          ))}
-        </div>
+    <SectionLayout id='contact' className='bg-[#F7F9FC]'>
+      <div>
+        <h1 className='font-bold text-4xl text-[#191919] pt-12 pb-12'>Contact</h1>
       </div>
-    </section>
+      <div className='grid grid-cols-2 md:grid-cols-3 place-items-start gap-x-12  md:gap-x-6 gap-y-12'>
+        {socialMedia.map((item) => (
+          <div key={item.label} className='flex gap-3 items-center'>
+            <div>{item.icon}</div>
+            <div>
+              <p className='text-xs text-gray-600'>{item.label}</p>
+              <div className='text-blue-600'>{item.url}</div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </SectionLayout>
   )
 }

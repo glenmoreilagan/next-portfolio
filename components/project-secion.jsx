@@ -2,25 +2,29 @@ import React from 'react'
 
 import { CgGym, CgCode, CgRead, CgLink, CgProfile } from 'react-icons/cg'
 import { FaGithub, FaLink } from 'react-icons/fa'
+import SectionLayout from './layouts/SectionLayout'
 
 export default function ProjectSection() {
   return (
-    <section className='w-[calc(100vw-3rem)] mx-auto sm:w-[93vw] md:w-[90vw] lg:w-[900px] pb-12' id='projects'>
+    <SectionLayout id='projects'>
+      <div>
+        <h1 className='font-bold text-4xl text-[#191919] pt-12 pb-12'>Projects</h1>
+      </div>
       <div className='flex justify-center items-center'>
         <div className='max-w-7xl mx-auto'>
-          <div className='grid grid-cols-1 md:grid-cols-2 gap-3 pt-12'>
+          <div className='grid grid-cols-1 md:grid-cols-2 gap-3'>
             <div className='flex gap-3 border border-gray-100 rounded-md p-10 w-full'>
               <div className='flex-1 relative'>
                 <div className='flex gap-3 mb-5 items-center'>
                   <div className='flex-1'>
-                    <p className='text-xl capitalize tracking-widest font-bold'>Kape-Shop</p>
+                    <p className='text-xl capitalize tracking-widest font-bold'>KAPE-SHOP</p>
                     <span className='text-xs text-gray-500'>Inventory with Point of Sale - 2024</span>
                   </div>
                   <div className='flex gap-3'>
                     <a href='https://github.com/glenmoreilagan/kape-shop2' target='_blank' title='View repository'>
                       <FaGithub size={'1em'} color='#303030' />
                     </a>
-                    <a href='https://kape-shop.vercel.app' title='View site'>
+                    <a href='https://kape-shop.vercel.app' target='_blank' title='View site'>
                       <FaLink size={'1em'} color='#303030' />
                     </a>
                   </div>
@@ -124,6 +128,6 @@ export default function ProjectSection() {
           </div>
         </div>
       </div>
-    </section>
+    </SectionLayout>
   )
 }
