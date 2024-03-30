@@ -12,7 +12,7 @@ export default function ProjectSection() {
       </div>
       <div className='flex justify-center items-center'>
         <div className='max-w-7xl mx-auto'>
-          <div className='grid grid-cols-1 md:grid-cols-2 gap-3'>
+          <div className='grid grid-cols-1 md:grid-cols-2 gap-6'>
             <div className='flex gap-3 border border-gray-100 rounded-md p-6 w-full'>
               <div className='flex-1 relative'>
                 <div className='flex gap-3 mb-5 items-center'>
