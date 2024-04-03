@@ -37,7 +37,7 @@ export default function SkillsSection() {
               <img src={skill.image} alt={skill.label} className='w-8 md:w-10' />
             </div>
             <div className='flex-1'>
-              <p className='text-center text-xs md:text-sm capitalize px-3'>{skill.label}</p>
+              <p className='text-center text-xs md:text-sm capitalize px-3 text-[#191919]'>{skill.label}</p>
             </div>
           </div>
         ))}

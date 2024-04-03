@@ -17,7 +17,7 @@ export default function ProjectSection() {
               <div className='flex-1 relative'>
                 <div className='flex gap-3 mb-5 items-center'>
                   <div className='flex-1'>
-                    <p className='text-xl capitalize tracking-widest font-bold'>KAPE-SHOP</p>
+                    <p className='text-xl capitalize tracking-widest font-bold text-[#191919]'>KAPE-SHOP</p>
                     <span className='text-xs text-gray-500'>Inventory with Point of Sale - 2024</span>
                   </div>
                   <div className='flex gap-3'>
@@ -52,7 +52,7 @@ export default function ProjectSection() {
               <div className='flex-1 relative'>
                 <div className='flex gap-3 mb-5 items-center'>
                   <div className='flex-1'>
-                    <p className='text-xl capitalize tracking-widest font-bold'>LMS</p>
+                    <p className='text-xl capitalize tracking-widest font-bold text-[#191919]'>LMS</p>
                     <span className='text-xs text-gray-500'>Leave Management System - 2021</span>
                   </div>
                   <div className='flex gap-3'>
@@ -87,7 +87,7 @@ export default function ProjectSection() {
               <div className='flex-1 relative'>
                 <div className='flex gap-3 mb-5 items-center'>
                   <div className='flex-1'>
-                    <p className='text-xl capitalize tracking-widest font-bold'>CAS</p>
+                    <p className='text-xl capitalize tracking-widest font-bold text-[#191919]'>CAS</p>
                     <span className='text-xs text-gray-500'>Clinic Appointment System - 2021</span>
                   </div>
                   <div className='flex gap-3'>

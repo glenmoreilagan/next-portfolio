@@ -47,7 +47,7 @@ export default function Home() {
   return (
     <>
       <nav className='bg-white p-10 sticky top-0 z-10 border-b-[1px]'>
-        <ul className='flex gap-6 justify-center'>
+        <ul className='flex gap-6 justify-center text-[#191919]'>
           <li>
             <a
               href='#home'

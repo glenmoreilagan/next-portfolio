@@ -63,7 +63,7 @@ export default function HeroSection() {
           </button>
         </a>
         <a href='#contact'>
-          <button className='bg-gray-100 hover:bg-gray-200 w-32 px-3 py-2 rounded-full font-medium text-xs flex items-center justify-center gap-3'>
+          <button className='bg-gray-100 hover:bg-gray-200 w-32 px-3 py-2 rounded-full font-medium text-xs flex items-center justify-center gap-3 text-[#191919]'>
             <BiMessageAltDetail size={16} />
             Contact
           </button>
