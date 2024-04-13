@@ -1,5 +1,5 @@
-import { useRouter } from 'next/router'
 import { useEffect, useState } from 'react'
+import { useRouter } from 'next/router'
 
 import dynamic from 'next/dynamic'
 
@@ -11,10 +11,9 @@ import SkillsSection from '@/components/skills-section'
 const ExperienceSection = dynamic(() => import('@/components/experience'), { ssr: false })
 
 import { CgGym, CgCode, CgRead } from 'react-icons/cg'
+import Navigation from '@/components/layouts/Navigation'
 
 export default function Home() {
-  const router = useRouter()
-  const [activeNav, setActiveNav] = useState(null)
   const abouts = [
     {
       title: 'coding',
@@ -36,65 +35,10 @@ export default function Home() {
     },
   ]
 
-  const handleNavLinkActive = (e) => {
-    setActiveNav('#' + e.target.href.split('#')[1])
-  }
-
-  useEffect(() => {
-    setActiveNav('#' + router.asPath.split('#')[1])
-  }, [])
-
   return (
     <>
-      <nav className='bg-white p-10 sticky top-0 z-10 border-b-[1px]'>
-        <ul className='flex gap-6 justify-center text-[#191919]'>
-          <li>
-            <a
-              href='#home'
-              className={`hover:font-bold transition-all delay-100 ${activeNav === '#home' && 'font-bold'}`}
-              onClick={handleNavLinkActive}
-            >
-              Home
-            </a>
-          </li>
-          <li>
-            <a
-              href='#skills'
-              className={`hover:font-bold transition-all delay-100  ${activeNav === '#skills' && 'font-bold'}`}
-              onClick={handleNavLinkActive}
-            >
-              Skills
-            </a>
-          </li>
-          <li>
-            <a
-              href='#projects'
-              className={`hover:font-bold transition-all delay-100 ${activeNav === '#projects' && 'font-bold'}`}
-              onClick={handleNavLinkActive}
-            >
-              Projects
-            </a>
-          </li>
-          <li>
-            <a
-              href='#experience'
-              className={`hover:font-bold transition-all delay-100 ${activeNav === '#experience' && 'font-bold'}`}
-              onClick={handleNavLinkActive}
-            >
-              Experience
-            </a>
-          </li>
-          <li>
-            <a
-              href='#contact'
-              className={`hover:font-bold transition-all delay-100 ${activeNav === '#contact' && 'font-bold'}`}
-              onClick={handleNavLinkActive}
-            >
-              Contact
-            </a>
-          </li>
-        </ul>
-      </nav>
+      {/* NAVIGATION */}
+      <Navigation />
 
       {/* HERO PAGE */}
       <HeroSection />
