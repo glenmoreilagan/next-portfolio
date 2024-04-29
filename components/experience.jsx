@@ -74,7 +74,7 @@ const ExperienceSection = () => {
               <li>Tech used: NextJS for frontend</li>
             </ul>
           </div>
-          <div className='mb-3'>
+          {/* <div className='mb-3'>
             <h1 className='font-medium text-[#191919]'>Pre-Approved LOA</h1>
             <ul className='list-inside list-disc ml-3 text-gray-600 font-thin text-sm'>
               <li>Developed this system for public user and admin side. </li>
@@ -82,7 +82,7 @@ const ExperienceSection = () => {
               <li>Admin has a dashboard and lists of the requestors/clients.</li>
               <li>Tech used: NextJS for frontend, Laravel for backend and MySql for database.</li>
             </ul>
-          </div>
+          </div> */}
           <div className='mb-3'>
             <h1 className='font-medium text-[#191919]'>Car Insurance</h1>
             <ul className='list-inside list-disc ml-3 text-gray-600 font-thin text-sm'>
