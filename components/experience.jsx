@@ -74,15 +74,6 @@ const ExperienceSection = () => {
               <li>Tech used: NextJS for frontend</li>
             </ul>
           </div>
-          {/* <div className='mb-3'>
-            <h1 className='font-medium text-[#191919]'>Pre-Approved LOA</h1>
-            <ul className='list-inside list-disc ml-3 text-gray-600 font-thin text-sm'>
-              <li>Developed this system for public user and admin side. </li>
-              <li>Clients can request a quotation of insurance. </li>
-              <li>Admin has a dashboard and lists of the requestors/clients.</li>
-              <li>Tech used: NextJS for frontend, Laravel for backend and MySql for database.</li>
-            </ul>
-          </div> */}
           <div className='mb-3'>
             <h1 className='font-medium text-[#191919]'>Car Insurance</h1>
             <ul className='list-inside list-disc ml-3 text-gray-600 font-thin text-sm'>
@@ -94,14 +85,27 @@ const ExperienceSection = () => {
             </ul>
           </div>
           <div className='mb-3'>
+            <h1 className='font-medium text-[#191919]'>Broadpath HR Portal</h1>
+            <ul className='list-inside list-disc ml-3 text-gray-600 font-thin text-sm'>
+              <li>
+                Developed HR portal for one of our clients to enroll their members for insurance. The HR will be the
+                user of this system for the enrollment of their employee and dependents.
+              </li>
+              <li>
+                One of our department team whom handle of client’s, they will check and approve the request from the HR
+                base on the Philcare’s list of the approved members.
+              </li>
+              <li>Tech used: NextJS for frontend, Laravel for backend and MySQL for database.</li>
+            </ul>
+          </div>
+          <div className='mb-3'>
             <h1 className='font-medium text-[#191919]'>Others</h1>
             <ul className='list-inside list-disc ml-3 text-gray-600 font-thin text-sm'>
-              <li>Deploying in digital ocean using CPanel of our backend which is Laravel for API.</li>
-              <li>Deploying in Vercel for CI/CD of our frontend which is React/NextJS.</li>
-              <li>
-                Implementing the importance of Github for our projects/systems for backups and tracking of changes.
-              </li>
+              <li>o Deploying using traditional way using cPanel and FTP.</li>
+              <li>o Deploying in Vercel for push to deploy of our frontend which is React/NextJS.</li>
+              <li>Suggesting to use Github for our projects/systems for backups and code tracking of changes.</li>
               <li>Implementing digital ocean spaces for our file storage.</li>
+              <li>Deploying in Laravel Forge for push to deploy of our backend which is Laravel</li>
             </ul>
           </div>
         </div>
