@@ -101,8 +101,8 @@ const ExperienceSection = () => {
           <div className='mb-3'>
             <h1 className='font-medium text-[#191919]'>Others</h1>
             <ul className='list-inside list-disc ml-3 text-gray-600 font-thin text-sm'>
-              <li>o Deploying using traditional way using cPanel and FTP.</li>
-              <li>o Deploying in Vercel for push to deploy of our frontend which is React/NextJS.</li>
+              <li>Deploying using traditional way using cPanel and FTP.</li>
+              <li>Deploying in Vercel for push to deploy of our frontend which is React/NextJS.</li>
               <li>Suggesting to use Github for our projects/systems for backups and code tracking of changes.</li>
               <li>Implementing digital ocean spaces for our file storage.</li>
               <li>Deploying in Laravel Forge for push to deploy of our backend which is Laravel</li>
