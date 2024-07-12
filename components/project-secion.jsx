@@ -42,7 +42,7 @@ export default function ProjectSection() {
                   <img src='/images/html.png' alt='html' width={26} />
                   <img src='/images/css.png' alt='css' width={26} />
                   <img src='/images/tailwind.png' alt='tailwind' width={26} />
-                  <img src='/images/js.png' alt='js' width={26} />
+                  <img src='/images/nextjs.png' alt='nextjs' width={26} />
                   <img src='/images/laravel.png' alt='laravel' width={26} />
                   <img src='/images/mysql.png' alt='mysql' width={26} />
                 </div>
