@@ -12,7 +12,7 @@ export default function ProjectSection() {
       </div>
       <div className='flex justify-center items-center'>
         <div className='max-w-7xl mx-auto'>
-          <div className='grid grid-cols-1 md:grid-cols-2 gap-6'>
+          <div className='grid gap-6'>
             <div className='flex gap-3 border border-gray-100 rounded-md p-6 w-full'>
               <div className='flex-1 relative'>
                 <div className='flex gap-3 mb-5 items-center'>
@@ -48,7 +48,7 @@ export default function ProjectSection() {
                 </div>
               </div>
             </div>
-            <div className='flex gap-3 border border-gray-100 rounded-md p-6 w-full'>
+            {/* <div className='flex gap-3 border border-gray-100 rounded-md p-6 w-full'>
               <div className='flex-1 relative'>
                 <div className='flex gap-3 mb-5 items-center'>
                   <div className='flex-1'>
@@ -82,8 +82,8 @@ export default function ProjectSection() {
                   <img src='/images/mysql.png' alt='mysql' width={26} />
                 </div>
               </div>
-            </div>
-            <div className='flex gap-3 border border-gray-100 rounded-md p-6 w-full'>
+            </div> */}
+            {/* <div className='flex gap-3 border border-gray-100 rounded-md p-6 w-full'>
               <div className='flex-1 relative'>
                 <div className='flex gap-3 mb-5 items-center'>
                   <div className='flex-1'>
@@ -118,7 +118,7 @@ export default function ProjectSection() {
                   <img src='/images/mysql.png' alt='mysql' width={26} />
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
