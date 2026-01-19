@@ -48,6 +48,40 @@ export default function ProjectSection() {
                 </div>
               </div>
             </div>
+            <div className='flex gap-3 border border-gray-100 rounded-md p-6 w-full'>
+              <div className='flex-1 relative'>
+                <div className='flex gap-3 mb-5 items-center'>
+                  <div className='flex-1'>
+                    <p className='text-xl capitalize tracking-widest font-bold text-[#191919]'>WEB ROOFING</p>
+                    <span className='text-xs text-gray-500'>Web Roofing - 2024</span>
+                  </div>
+                  <div className='flex gap-3'>
+                    <a href='https://github.com/glenmoreilagan/webster-roofing' target='_blank' title='View repository'>
+                      <FaGithub size={'1em'} color='#303030' />
+                    </a>
+                    <a href='https://webster-roofing-git-main-glenmoreilagans-projects.vercel.app' target='_blank' title='View site'>
+                      <FaLink size={'1em'} color='#303030' />
+                    </a>
+                  </div>
+                </div>
+                <div>
+                  <p className='text-sm mb-20 text-gray-600 line-clamp-3 md:line-clamp-6'>
+                    Web Roofing is a cutting-edge website designed to revolutionize the roofing industry. With a modern
+                    and user-friendly interface, Web Roofing empowers homeowners, contractors, and roofing professionals to
+                    effortlessly access comprehensive roofing services, from quote requests to project management.
+                  </p>
+                </div>
+                <div className='flex items-center gap-3 absolute bottom-0'>
+                  <img src='/images/html.png' alt='html' width={26} />
+                  <img src='/images/css.png' alt='css' width={26} />
+                  <img src='/images/tailwind.png' alt='tailwind' width={26} />
+                  <img src='/images/react.png' alt='react' width={26} />
+                  {/* <img src='/images/nextjs.png' alt='nextjs' width={26} /> */}
+                  {/* <img src='/images/laravel.png' alt='laravel' width={26} /> */}
+                  {/* <img src='/images/mysql.png' alt='mysql' width={26} /> */}
+                </div>
+              </div>
+            </div>
             {/* <div className='flex gap-3 border border-gray-100 rounded-md p-6 w-full'>
               <div className='flex-1 relative'>
                 <div className='flex gap-3 mb-5 items-center'>
