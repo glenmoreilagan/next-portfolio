@@ -56,7 +56,7 @@ export default function HeroSection() {
       </div>
 
       <div className='flex justify-center gap-3'>
-        <a href='/Glenmore Ilagan_PDF.pdf' target='_blank'>
+        <a href='/Glenmore_Ilagan.pdf' target='_blank'>
           <button className='bg-blue-500 hover:bg-blue-600 w-32 px-3 py-2 rounded-full font-medium text-xs flex items-center justify-center gap-3 text-white'>
             <BiFile size={16} />
             Resume
