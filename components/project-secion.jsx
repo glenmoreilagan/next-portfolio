@@ -24,7 +24,7 @@ export default function ProjectSection() {
                     <a href='https://github.com/glenmoreilagan/kape-shop2' target='_blank' title='View repository'>
                       <FaGithub size={'1em'} color='#303030' />
                     </a>
-                    <a href='https://kape-shop.vercel.app' target='_blank' title='View site'>
+                    <a href='https://kape-shop-glenmoreilagans-projects.vercel.app' target='_blank' title='View site'>
                       <FaLink size={'1em'} color='#303030' />
                     </a>
                   </div>
